@@ -1,9 +1,14 @@
 *{
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
+*::placeholder{
+    font-size: larger;
+}
+
 body{
-    background: #222;
+    background: #222222;
     color: #fff;
     font-family: system-ui;
 }
@@ -30,6 +35,7 @@ input{
 input:focus{
     background-color: #000;
     transform: scale(1.1);
+    transition: .5s;
 }
 
 .price input{
@@ -49,15 +55,19 @@ button{
     height: 30px;
     border: none;
     cursor: pointer;
-    background-color: blueviolet;
+    background-color: rgb(187, 161, 11);
     color: aliceblue;
     border-radius: 20px;
+    font-size: large;
+    margin: 15px 0;
+    width: 50%;
 }
 button:hover{
-    background-color: rgb(91, 27, 151);
+    background-color: rgb(99, 86, 14);
     letter-spacing: 1px;
     transition: 0.5s;
 }
+
 .btnSearch{
     display: flex;
     justify-content: space-between;
@@ -76,4 +86,7 @@ table th {
 }
 th,td{
     padding: 5px;
+}
+tr th{
+    background-color: rgba(34, 5, 41, 0.363); 
 }
